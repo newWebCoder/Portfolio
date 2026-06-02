@@ -4,9 +4,9 @@ import emailjs from "@emailjs/browser";
 import { meta } from "../data/portfolio";
 import {  fadeLeft, fadeRight, staggerContainer, viewport } from "../utils/variants";
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 const MailIcon = () => (
   <svg className="h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
@@ -29,14 +29,16 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setStatus("sending");
-
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-      () => {
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+        console.log("SUCCESS:", result.text);
         setStatus("sent");
         form.current.reset();
-      },
-      () => setStatus("error")
-    );
+      })
+      .catch((error) => {
+        console.error("EMAIL ERROR:", error);
+        setStatus("error");
+      });
   };
 
   return (
