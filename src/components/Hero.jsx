@@ -6,7 +6,7 @@ import {
   stack,
   certifications,
 } from "../data/portfolio";
-import { fadeUp, fadeIn, viewport } from "../utils/variants";
+import { fadeUp, fadeIn } from "../utils/variants";
 
 const Hero = () => {
   return (

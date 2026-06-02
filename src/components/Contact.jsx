@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { meta } from "../data/portfolio";
-import { fadeUp, fadeLeft, fadeRight, staggerContainer, viewport } from "../utils/variants";
+import {  fadeLeft, fadeRight, staggerContainer, viewport } from "../utils/variants";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -21,11 +21,6 @@ const PinIcon = () => (
   </svg>
 );
 
-const CheckIcon = () => (
-  <svg className="h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-);
 
 const Contact = () => {
   const form = useRef(null);
@@ -128,7 +123,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   rows={5}
-                  placeholder="Tell me about your project..."
+                  placeholder="Type your message here"
                   required
                   disabled={status === "sending"}
                   className="h-[130px] w-full resize-none rounded-[10px] border-[1.5px] border-border bg-paper-card px-4 py-3 text-sm text-ink outline-none transition focus:border-accent focus:shadow-[0_0_0_3px_rgba(200,86,58,0.1)] disabled:opacity-50"

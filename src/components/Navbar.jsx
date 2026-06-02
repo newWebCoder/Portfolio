@@ -21,7 +21,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <a href="#" className="nav-logo flex items-center gap-1.5 font-serif text-xl text-ink">
+      <a href="/" className="nav-logo flex items-center gap-1.5 font-serif text-xl text-ink">
         Vidyashree<span className="text-accent">.</span>
       </a>
 
