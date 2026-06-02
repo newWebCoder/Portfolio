@@ -11,6 +11,7 @@ export const meta = {
   linkedin: "https://www.linkedin.com/in/vidyashree-muroor-424022a6/",
   available: true,
   visaNote: "",
+  contact: "+44 7311033458"
 };
 
 export const navLinks = [

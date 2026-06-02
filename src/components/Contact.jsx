@@ -70,6 +70,25 @@ const Contact = () => {
               </a>
             </div>
             <div className="mb-4 flex items-center gap-3 text-sm text-ink-soft">
+              <svg
+                className="h-4 w-4 shrink-0 text-accent"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.8}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a1.125 1.125 0 01-1.12.38c-1.243-.24-2.445-.69-3.56-1.329a15.019 15.019 0 01-4.42-4.42c-.64-1.115-1.09-2.317-1.33-3.56a1.125 1.125 0 01.38-1.12l1.293-.97a1.125 1.125 0 00.417-1.173L6.963 3.102a2.25 2.25 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
+              </svg>
+
+              <a href={`tel:${meta.contact}`} className="hover:text-ink">
+                {meta.contact}
+              </a>
+            </div>
+            <div className="mb-4 flex items-center gap-3 text-sm text-ink-soft">
               <PinIcon />
               {meta.location}
             </div>

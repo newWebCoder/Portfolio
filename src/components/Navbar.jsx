@@ -22,7 +22,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <a href="/" className="nav-logo flex items-center gap-1.5 font-serif text-xl text-ink">
-        Vidyashree
+        Home
       </a>
 
       <div className="nav-links hidden items-center gap-8 lg:flex">
