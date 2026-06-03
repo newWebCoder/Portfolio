@@ -37,12 +37,31 @@ const Navbar = () => {
         ))}
       </div>
 
-      <a
-        href="#contact"
-        className="rounded-full bg-ink px-5 py-2 text-[0.8rem] font-medium uppercase tracking-[0.04em] text-paper transition-all hover:-translate-y-px hover:bg-accent"
-      >
-        Contact
-      </a>
+      <div className="hidden lg:flex items-center gap-4">
+        <a
+          href="/Vidyashree%20Muroor_Frontend%20Developer.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[0.85rem] font-medium uppercase tracking-[0.04em] text-ink-soft transition-colors hover:text-ink"
+        >
+          Resume
+        </a>
+
+        <a
+          href="/Vidyashree%20Muroor_Frontend%20Developer.pdf"
+          download
+          className="rounded-full border border-ink px-4 py-2 text-[0.8rem] font-medium uppercase tracking-[0.04em] text-ink transition-all hover:bg-ink/5"
+        >
+          Download
+        </a>
+
+        <a
+          href="#contact"
+          className="rounded-full bg-ink px-5 py-2 text-[0.8rem] font-medium uppercase tracking-[0.04em] text-paper transition-all hover:-translate-y-px hover:bg-accent"
+        >
+          Contact
+        </a>
+      </div>
     </motion.nav>
   );
 };
