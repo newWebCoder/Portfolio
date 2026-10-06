@@ -83,7 +83,7 @@ export const experiences = [
     role: "Front End Developer",
     company: "Powerweave Software Services",
     period: "Jun 2024 – Present",
-    location: "India",
+    location: "Remote, UK",
     bullets: [
       "Developed and maintained B2B websites on the eWiz SaaS platform, implementing frontend features and client-requested site updates.",
       "Served as a senior development resource, joining client requirement meetings with the Customer Success team and implementing agreed changes on the site.",
