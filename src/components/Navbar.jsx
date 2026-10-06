@@ -39,7 +39,7 @@ const Navbar = () => {
 
       <div className="hidden lg:flex items-center gap-4">
         <a
-          href="/Vidyashree%20Muroor_Frontend%20Developer.pdf"
+          href="/Vidyashree_Muroor_Frontend_Developer_CV_6years.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[0.85rem] font-medium uppercase tracking-[0.04em] text-ink-soft transition-colors hover:text-ink"
@@ -48,8 +48,8 @@ const Navbar = () => {
         </a>
 
         <a
-          href="/Vidyashree%20Muroor_Frontend%20Developer.pdf"
-          download
+          href="/Vidyashree_Muroor_Frontend_Developer_CV_6years.pdf"
+          download="Vidyashree_Muroor_Frontend_Developer_CV_6years.pdf"
           className="rounded-full border border-ink px-4 py-2 text-[0.8rem] font-medium uppercase tracking-[0.04em] text-ink transition-all hover:bg-ink/5"
         >
           Download

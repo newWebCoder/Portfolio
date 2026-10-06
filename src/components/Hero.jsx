@@ -20,13 +20,20 @@ const Hero = () => {
           <div>
             {meta.available && (
               <motion.div
-                className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#E8C4BA] bg-accent-lt px-4 py-1.5 text-[0.75rem] font-medium uppercase tracking-[0.06em] text-accent"
+                className="mb-7 flex flex-wrap items-center gap-3"
                 variants={fadeIn}
                 initial="hidden"
                 animate="visible"
               >
-                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-                {meta.badge}
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#B7DCC0] bg-[#EAF7EE] px-4 py-1.5 text-[0.72rem] uppercase tracking-[0.04em] text-[#1F6A3A]">
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#1F6A3A]" />
+                  {meta.badge}
+                </div>
+
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#B7DCC0] bg-[#EAF7EE] px-4 py-1.5 text-[0.72rem] uppercase tracking-[0.04em] text-[#1F6A3A]">
+                  <span className="text-xs">✓</span>
+                  {meta.visaNote}
+                </div>
               </motion.div>
             )}
 
@@ -49,10 +56,8 @@ const Hero = () => {
               animate="visible"
               transition={{ delay: 0.2 }}
             >
-              7+ years building scalable B2B &amp; B2C e-commerce platforms at{" "}
-              <strong className="font-medium text-ink">Powerweave</strong> on the Ewiz
-              Commerce stack. I turn complex catalogue requirements into clean, reusable UI
-              systems focused on{" "}
+              6+ years of frontend development experience.{" "}
+              I build scalable B2B e-commerce platforms on the Ewiz Commerce stack, turning complex catalogue requirements into clean, reusable UI systems focused on {" "}
               <strong className="font-medium text-ink">performance</strong>,{" "}
               <strong className="font-medium text-ink">reusability</strong>, and{" "}
               <strong className="font-medium text-ink">user experience</strong>.

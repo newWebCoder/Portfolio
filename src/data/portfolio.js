@@ -3,16 +3,16 @@ export const meta = {
   role: "Frontend Developer",
   headline: "React.js · JavaScript · jQuery",
   tagline:
-    "7+ years building scalable B2B & B2C e-commerce platforms at Powerweave on the Ewiz Commerce stack. I turn complex catalogue requirements into clean, reusable UI systems focused on performance, reusability, and user experience.",
-  badge: "Open to work ",
+   "6+ years of frontend experience building scalable B2B e-commerce platforms on the Ewiz Commerce stack. I turn complex catalogue requirements into clean, reusable UI systems focused on performance and user experience.",
+  badge: "Open to work",
+  visaNote: "Visa status: Valid till 2029",
   upskilling: "Actively upskilling in Next.js & advanced React patterns",
   email: "vidyam.wagle@gmail.com",
   location: "Leamington Spa, United Kingdom",
   linkedin: "https://www.linkedin.com/in/vidyashree-muroor-424022a6/",
   available: true,
-  visaNote: "",
   contact: "+44 7311033458"
-};
+}
 
 export const navLinks = [
   { href: "#about", label: "About" },
@@ -22,8 +22,8 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { value: "7+", label: "Years exp." },
-  { value: "B2B/B2C", label: "Platforms" },
+  { value: "6+", label: "Years exp." },
+  { value: "B2B", label: "Platforms" },
   { value: "2", label: "Certifications" },
 ];
 
@@ -59,7 +59,7 @@ export const aboutCards = [
   {
     icon: "🏗️",
     title: "UI Systems Specialist",
-    body: "4+ years building B2B & B2C platforms on Ewiz Commerce — turning complex catalogue and configuration requirements into clean, reusable UI systems.",
+    body: "4+ years building B2B platforms on Ewiz Commerce — turning complex catalogue and configuration requirements into clean, reusable UI systems.",
   },
   {
     icon: "⚡",
@@ -80,47 +80,69 @@ export const aboutCards = [
 
 export const experiences = [
   {
-    role: "Front End Developer — Support Team",
+    role: "Front End Developer",
     company: "Powerweave Software Services",
     period: "Jun 2024 – Present",
     location: "India",
     bullets: [
-      "Analysed incoming UI/UX issues on B2B & B2C e-commerce platforms and translated design updates into responsive layouts on the Ewiz Commerce stack",
-      "Developed and maintained front-end code to resolve bugs and UI inconsistencies with minimal disruption to production",
-      "Implemented interactive fixes using JavaScript and jQuery for legacy components requiring quick patches or upgrades",
-      "Ensured cross-browser compatibility and responsive design across all major browsers and devices before every deployment",
-      "Contributed to faster turnaround on high-priority tickets by identifying root causes and verifying post-deployment functionality",
+      "Developed and maintained B2B websites on the eWiz SaaS platform, implementing frontend features and client-requested site updates.",
+      "Served as a senior development resource, joining client requirement meetings with the Customer Success team and implementing agreed changes on the site.",
+      "Refactored JavaScript and CSS into modular React components; this reduced future development time by about 30%.",
+      "Investigated production defects and performance bottlenecks, working with backend and QA colleagues to deliver fixes through Agile sprints.",
+      "Applied responsive design, cross-browser checks, code splitting, and lazy loading to support usability and application performance.",
     ],
   },
   {
     role: "Associate Web Developer",
     company: "Powerweave Software Services",
-    period: "Oct 2021 – May 2024",
+    period: "Mar 2022 – May 2024",
     location: "Andheri, India",
     bullets: [
-      "Designed and customised e-commerce platform interfaces on the Ewiz Commerce stack for enterprise B2B and B2C clients",
-      "Translated design mockups into pixel-perfect, fully responsive layouts meeting UI/UX standards across devices",
-      "Built and maintained front-end code using HTML5, CSS3, JavaScript, and jQuery to deliver seamless user experiences",
-      "Optimised product listing, search flows, and catalogue UIs for performance and cross-browser compatibility",
-      "Collaborated closely with back-end developers and UI/UX designers to integrate APIs and refine application features",
+      "Built responsive e-commerce interfaces using JavaScript, HTML, and Sass, working from new designs and existing applications",
+      "Worked with designers and backend developers in Agile method, maintaining layouts across mobile, tablet, and desktop",
+      "Upskilled in React to build fast, responsive websites",
+      "Translated UI/UX wireframes and Figma designs into reusable React components",
+      "Implemented product filters, cart updates, and form validation using React Hooks and component state",
+      "Integrated REST APIs for product data, handling loading, error, and data-transformation states",
+    ],
+  },
+  {
+    role: "Junior Web Developer",
+    company: "Avencore",
+    period: "Oct 2021 - Feb 2022",
+    location: "Remote",
+    bullets: [
+      "Developed e-commerce websites on the eWiz SaaS platform, enhancing user experience and functionality.",
+      "Designed and implemented website layouts using HTML, CSS, JavaScript, and jQuery, ensuring responsive design.",
+      "Collaborated with cross-functional teams to deliver projects on time and meet client specifications.",
+    ],
+  },
+  {
+    role: "Career break",
+    company: "Career break",
+    period: "Oct 2019 – Sep 2021 ",
+    location: "Karnataka, India",
+    bullets: [
+      "Career break to welcome and care for my child.",
     ],
   },
   {
     role: "Associate Software Engineer",
     company: "OMNION Premedia Pvt. Ltd",
-    period: "Aug 2018 – Sep 2021",
+    period: "Aug 2018 – Sep 2019",
     location: "India",
     bullets: [
-      "Assisted in development of client-facing web interfaces with a focus on UI quality and usability",
-      "Contributed to troubleshooting and performance optimisation across multiple web applications",
+      "Designed user interfaces for orthodontic applications, enhancing user experience and clinical efficiency", 
+       "Contributed to application development  using HTML, CSS, JavaScript, and jQuery",
+       "Collaborated with team members to build and refine features, ensuring alignment with clinical needs"
     ],
   },
 ];
 
 export const projects = [
   {
-    eyebrow: "B2B/B2C · E-commerce",
-    title: "B2B & B2C E-commerce Platform",
+    eyebrow: "B2B · E-commerce",
+    title: "B2B  E-commerce Platform",
     desc: "Delivered end-to-end frontend for multiple e-commerce platforms, building responsive, reusable UIs for listings, catalog, cart, and checkout using HTML5, SCSS, JavaScript, and React with Tailwind CSS.",
     tags: ["Ewiz Commerce", "HTML5", "SCSS", "JavaScript", "React.js", "Tailwind CSS", "REST APIs"],
     featured: false,

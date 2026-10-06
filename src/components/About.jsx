@@ -37,7 +37,7 @@ const About = () => {
                     building interfaces the traditional way. Over 4+ years at Powerweave, I
                     grew into designing full UI systems on the{" "}
                     <strong className="font-medium text-ink">Ewiz Commerce</strong> stack for
-                    enterprise B2B and B2C clients.
+                    enterprise B2B clients.
                   </>
                 ) : (
                   <>
