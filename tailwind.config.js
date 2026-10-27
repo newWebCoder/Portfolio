@@ -3,15 +3,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#1a1814",
-        "ink-soft": "#6b6760",
-        "ink-muted": "#a09d98",
-        paper: "#F7F4EF",
-        "paper-warm": "#EDE9E2",
-        "paper-card": "#FDFCFA",
-        accent: "#C8563A",
-        "accent-lt": "#F2DDD7",
-        border: "#D9D4CC",
+        ink: "#f5f5f1",
+        "ink-soft": "#b9b7b3",
+        "ink-muted": "#85827e",
+        paper: "#090909",
+        "paper-warm": "#111111",
+        "paper-card": "#181818",
+        accent: "#e50914",
+        "accent-lt": "#2a1113",
+        border: "#303030",
       },
       fontFamily: {
         serif: ['"DM Serif Display"', "Georgia", "serif"],

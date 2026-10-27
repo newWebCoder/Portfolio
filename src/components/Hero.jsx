@@ -1,187 +1,121 @@
 import { motion } from "framer-motion";
-import {
-  meta,
-  stats,
-  pillars,
-  stack,
-  certifications,
-} from "../data/portfolio";
+import { meta, stats } from "../data/portfolio";
 import { fadeUp, fadeIn } from "../utils/variants";
 
-const Hero = () => {
-  return (
-    <section
-      id="hero"
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-20"
-    >
-      <div className="mx-auto max-w-content px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-[1fr_380px]">
-          {/* Left */}
-          <div>
-            {meta.available && (
-              <motion.div
-                className="mb-7 flex flex-wrap items-center gap-3"
-                variants={fadeIn}
-                initial="hidden"
-                animate="visible"
-              >
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#B7DCC0] bg-[#EAF7EE] px-4 py-1.5 text-[0.72rem] uppercase tracking-[0.04em] text-[#1F6A3A]">
-                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#1F6A3A]" />
-                  {meta.badge}
-                </div>
+const Hero = () => (
+  <section id="hero" className="hero-spotlight relative flex min-h-[min(900px,100svh)] items-center overflow-hidden pb-16 pt-28 sm:pt-32">
+    <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
+    <div className="relative mx-auto grid w-full max-w-content items-center gap-12 px-6 sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+      <div className="relative z-10">
+        <motion.div
+          className="mb-6 flex flex-wrap items-center gap-3"
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+        >
+          <span className="inline-flex items-center gap-2 rounded-sm bg-accent px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.14em] text-white">
+            <span className="h-1.5 w-1.5 rounded-full bg-white" />
+            {meta.badge}
+          </span>
+          <span className="text-xs font-medium tracking-wide text-ink-soft">
+            {meta.location}
+          </span>
+        </motion.div>
 
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#B7DCC0] bg-[#EAF7EE] px-4 py-1.5 text-[0.72rem] uppercase tracking-[0.04em] text-[#1F6A3A]">
-                  <span className="text-xs">✓</span>
-                  {meta.visaNote}
-                </div>
-              </motion.div>
-            )}
+        <motion.h1
+          className="mb-5 max-w-[760px] font-sans text-[clamp(3.2rem,8vw,6.6rem)] font-extrabold leading-[0.94] tracking-[-0.06em] text-ink"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.1 }}
+        >
+          Frontend
+          <br />
+          <span className="text-accent">Developer</span>
+        </motion.h1>
 
-            <motion.h1
-              className="mb-6 text-[clamp(3rem,7vw,5.5rem)] text-ink"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: 0.1 }}
-            >
-              Frontend
-              <br />
-              <em className="italic text-accent">Developer</em>
-            </motion.h1>
+        <motion.div
+          className="mb-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-semibold uppercase tracking-[0.13em] text-ink-soft sm:text-sm"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.2 }}
+        >
+          <span className="text-[#46d369]">6+ years experience</span>
+          <span aria-hidden="true" className="text-ink-muted">•</span>
+          <span>React.js</span>
+          <span aria-hidden="true" className="text-ink-muted">•</span>
+          <span>JavaScript</span>
+        </motion.div>
+        <motion.p
+          className="mb-8 max-w-[590px] text-base leading-[1.8] text-ink-soft sm:text-lg"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.25 }}
+        >
+          {meta.tagline}
+        </motion.p>
 
-            <motion.p
-              className="mb-10 max-w-[480px] text-[1.05rem] leading-[1.75] text-ink-soft"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: 0.2 }}
-            >
-              6+ years of frontend development experience.{" "}
-              I build scalable B2B e-commerce platforms on the Ewiz Commerce stack, turning complex catalogue requirements into clean, reusable UI systems focused on {" "}
-              <strong className="font-medium text-ink">performance</strong>,{" "}
-              <strong className="font-medium text-ink">reusability</strong>, and{" "}
-              <strong className="font-medium text-ink">user experience</strong>.
-            </motion.p>
-
-            <motion.div
-              className="mb-12 flex flex-wrap gap-3"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: 0.3 }}
-            >
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-all hover:-translate-y-px hover:bg-accent"
-              >
-                View my work
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-border bg-transparent px-6 py-3 text-sm font-medium text-ink transition-all hover:-translate-y-px hover:border-ink"
-              >
-                Get in touch
-              </a>
-              <a
-                href={`mailto:${meta.email}`}
-                className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-border bg-transparent px-6 py-3 text-sm font-medium text-ink transition-all hover:-translate-y-px hover:border-ink"
-              >
-                Email me
-              </a>
-            </motion.div>
-
-            <motion.div
-              className="flex flex-wrap gap-8 border-t border-border pt-8"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: 0.4 }}
-            >
-              {stats.map(({ value, label }) => (
-                <div key={label} className="flex flex-col gap-0.5">
-                  <span className="font-serif text-2xl text-ink">{value}</span>
-                  <span className="text-[0.75rem] uppercase tracking-[0.04em] text-ink-muted">
-                    {label}
-                  </span>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-
-          {/* Right card — hidden on small screens */}
-          <motion.aside
-            className="relative hidden rounded-[20px] border border-border bg-paper-card p-8 lg:block"
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 0.2 }}
+        <motion.div
+          className="mb-12 flex flex-wrap gap-3"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.3 }}
+        >
+          <a
+            href="#projects"
+            className="inline-flex min-h-12 items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#f6121d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
-            <div
-              className="pointer-events-none absolute -right-[60px] -top-[60px] h-[260px] w-[260px] rounded-full opacity-60"
-              style={{
-                background: "radial-gradient(circle, #F2DDD7 0%, transparent 70%)",
-              }}
-              aria-hidden
-            />
+            <span aria-hidden="true">▶</span> Explore my work
+          </a>
+          <a
+            href="#about"
+            className="inline-flex min-h-12 items-center gap-2 rounded-md bg-white/10 px-6 py-3 text-sm font-bold text-ink transition hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+          >
+            More about me <span aria-hidden="true">→</span>
+          </a>
+        </motion.div>
 
-            <p className="mb-1 font-serif text-2xl text-ink">{meta.name}</p>
-            <p className="mb-6 text-[0.85rem] text-ink-soft">{meta.headline}</p>
-
-            <p className="mb-3 text-[0.7rem] font-medium uppercase tracking-[0.08em] text-ink-muted">
-              Focus areas
-            </p>
-            <ul className="mb-5 flex flex-col gap-2">
-              {pillars.map(({ name, desc }) => (
-                <li
-                  key={name}
-                  className="flex w-full items-center  rounded-lg bg-paper-warm px-3 py-2 text-sm"
-                >
-                  <span className="flex-1 font-medium text-ink">{name}</span>
-                  <span className="flex-1 text-xs text-ink-muted">{desc}</span>
-                </li>
-              ))}
-            </ul>
-
-            <hr className="my-5 border-border" />
-
-            <p className="mb-3 text-[0.7rem] font-medium uppercase tracking-[0.08em] text-ink-muted">
-              Stack
-            </p>
-            <div className="mb-5 flex flex-wrap gap-1.5">
-              {stack.map(({ name, accent }) => (
-                <span
-                  key={name}
-                  className={`rounded-md border px-2.5 py-1 font-mono text-[0.7rem] ${
-                    accent
-                      ? "border-[#E8C4BA] bg-accent-lt text-accent"
-                      : "border-border bg-paper-warm text-ink-soft"
-                  }`}
-                >
-                  {name}
-                </span>
-              ))}
+        <motion.div
+          className="flex flex-wrap gap-x-9 gap-y-4 border-t border-white/10 pt-6"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.4 }}
+        >
+          {stats.map(({ value, label }) => (
+            <div key={label} className="flex flex-col gap-0.5">
+              <span className="font-sans text-2xl font-bold tracking-tight text-ink">{value}</span>
+              <span className="text-[0.68rem] font-semibold uppercase tracking-[0.13em] text-ink-muted">{label}</span>
             </div>
-
-            <hr className="my-5 border-border" />
-
-            <p className="mb-3 text-[0.7rem] font-medium uppercase tracking-[0.08em] text-ink-muted">
-              Certifications
-            </p>
-            <ul className="flex flex-col gap-2">
-              {certifications.map(({ icon, title }) => (
-                <li key={title} className="flex items-center gap-2.5 text-[0.825rem] text-ink-soft">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-accent-lt text-sm">
-                    {icon}
-                  </span>
-                  {title}
-                </li>
-              ))}
-            </ul>
-          </motion.aside>
-        </div>
+          ))}
+        </motion.div>
       </div>
-    </section>
-  );
-};
+
+      <motion.aside
+        className="profile-portrait relative mx-auto flex aspect-[4/5] w-[min(72vw,260px)] items-end overflow-hidden rounded-xl border border-white/10 shadow-[0_28px_90px_rgba(0,0,0,0.65)] sm:w-full sm:max-w-[360px]"
+        aria-label={`${meta.name} profile`}
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.2 }}
+      >
+        <img
+          src="/vidyashree_Muroor.PNG"
+          alt={`Portrait of ${meta.name}`}
+          fetchPriority="high"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
+        />
+        <div className="portrait-copy relative z-10 w-full px-6 pb-6 pt-16">
+          <p className="mb-1 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[#ff858b]">Meet the developer</p>
+          <p className="font-sans text-2xl font-bold text-white">{meta.name}</p>
+          <p className="mt-1 text-sm text-white/70">{meta.headline}</p>
+        </div>
+      </motion.aside>
+    </div>
+  </section>
+);
 
 export default Hero;

@@ -10,7 +10,7 @@ const Experience = () => {
         <SectionHeader
           eyebrow="Work history"
           title="Experience"
-          desc="4+ years at the same company — growing from associate to leading UI on enterprise platforms."
+          desc="Six years of frontend experience across e-commerce, web design, and software development."
         />
 
         <motion.div
@@ -35,20 +35,22 @@ const Experience = () => {
               </div>
 
               <div>
-                <h3 className="mb-4 font-serif text-[1.4rem] leading-tight text-ink">
+                <h3 className="mb-4 font-sans text-[1.25rem] font-semibold leading-tight text-ink">
                   {role}
                 </h3>
-                <ul className="flex flex-col gap-2">
-                  {bullets.map((b) => (
-                    <li
-                      key={b}
-                      className="flex gap-2.5 text-sm leading-relaxed text-ink-soft"
-                    >
-                      <span className="mt-px shrink-0 text-accent">▸</span>
-                      {b}
-                    </li>
-                  ))}
-                </ul>
+                {bullets.length > 0 && (
+                  <ul className="flex flex-col gap-2">
+                    {bullets.map((b) => (
+                      <li
+                        key={b}
+                        className="flex gap-2.5 text-sm leading-relaxed text-ink-soft"
+                      >
+                        <span className="mt-px shrink-0 text-accent">▸</span>
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </motion.article>
           ))}

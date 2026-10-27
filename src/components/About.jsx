@@ -30,23 +30,7 @@ const About = () => {
                 viewport={viewport}
                 transition={{ delay: i * 0.1 }}
               >
-                {i === 0 ? (
-                  <>
-                    I started with{" "}
-                    <strong className="font-medium text-ink">HTML, SCSS, and jQuery</strong> —
-                    building interfaces the traditional way. Over 4+ years at Powerweave, I
-                    grew into designing full UI systems on the{" "}
-                    <strong className="font-medium text-ink">Ewiz Commerce</strong> stack for
-                    enterprise B2B clients.
-                  </>
-                ) : (
-                  <>
-                    Today I specialise in{" "}
-                    <strong className="font-medium text-ink">React.js</strong> — writing
-                    component architectures that are reusable, maintainable, and fast. I care
-                    about code that scales, not just code that ships.
-                  </>
-                )}
+                {paragraph}
               </motion.p>
             ))}
 

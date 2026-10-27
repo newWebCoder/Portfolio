@@ -9,10 +9,10 @@ const SectionHeader = ({ eyebrow, title, desc, className = "" }) => (
     whileInView="visible"
     viewport={viewport}
   >
-    <span className="font-mono text-xs font-medium uppercase tracking-[0.12em] text-accent block mb-3">
+    <span className="mb-3 block font-mono text-xs font-medium uppercase tracking-[0.16em] text-accent">
       {eyebrow}
     </span>
-    <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] text-ink mb-3">{title}</h2>
+    <h2 className="mb-3 font-sans text-[clamp(2rem,4vw,3rem)] font-bold tracking-tight text-ink">{title}</h2>
     {desc && (
       <p className="text-base text-ink-soft max-w-[460px] leading-relaxed">{desc}</p>
     )}

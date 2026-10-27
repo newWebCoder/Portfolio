@@ -1,217 +1,183 @@
 export const meta = {
   name: "Vidyashree Muroor",
-  role: "Frontend Developer",
-  headline: "React.js · JavaScript · jQuery",
+  role: "Front-End Developer",
+  headline: "React.js · JavaScript · E-commerce",
   tagline:
-   "6+ years of frontend experience building scalable B2B e-commerce platforms on the Ewiz Commerce stack. I turn complex catalogue requirements into clean, reusable UI systems focused on performance and user experience.",
+    "Frontend Developer with 6 years of experience building responsive, accessible, and user-focused web applications with React.js, JavaScript, and REST APIs.",
   badge: "Open to work",
-  visaNote: "Visa status: Valid till 2029",
-  upskilling: "Actively upskilling in Next.js & advanced React patterns",
+  upskilling: "Always learning modern frontend practices",
   email: "vidyam.wagle@gmail.com",
-  location: "Leamington Spa, United Kingdom",
+  location: "Leamington Spa, UK",
   linkedin: "https://www.linkedin.com/in/vidyashree-muroor-424022a6/",
   available: true,
-  contact: "+44 7311033458"
-}
+  contact: "+44 7311 033458",
+};
 
 export const navLinks = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
+  { href: "#education", label: "Education" },
 ];
 
 export const stats = [
-  { value: "6+", label: "Years exp." },
-  { value: "B2B", label: "Platforms" },
-  { value: "2", label: "Certifications" },
-];
-
-export const pillars = [
-  { name: "Frontend Architecture", desc: "Scalable, reusable systems" },
-  { name: "High-Speed User Experiences", desc: "Fast, smooth interactions" },
-  { name: "High-Speed UX", desc: "Snappy, fluid interactions" },
-  { name: "Responsiveness", desc: "Flawless on every device" },
-];
-
-export const stack = [
-  { name: "React.js", accent: true },
-  { name: "Next.js", accent: true },
-  { name: "JavaScript", accent: false },
-  { name: "jQuery", accent: false },
-  { name: "Tailwind CSS", accent: false },
-  { name: "SCSS", accent: false },
-  { name: "REST APIs", accent: false },
-  { name: "Ewiz Commerce", accent: false },
+  { value: "6+", label: "Years building for web" },
+  { value: "React", label: "Reusable UI systems" },
+  { value: "WCAG", label: "Accessibility-minded" },
 ];
 
 export const certifications = [
-  { icon: "⚛️", title: "React.js Certification" },
-  { icon: "▲", title: "Next.js Certification" },
+  { icon: "⚛️", title: "Advanced React Development — React.js" },
+  { icon: "▲", title: "Next.js Development — Server-Side Rendering & Static Site Generation" },
 ];
 
 export const aboutBio = [
-  "I started with HTML, SCSS, and jQuery — building interfaces the traditional way. Over 4+ years at Powerweave, I grew into designing full UI systems on the Ewiz Commerce stack for enterprise B2B and B2C clients.",
-  "Today I specialise in React.js — writing component architectures that are reusable, maintainable, and fast. I care about code that scales, not just code that ships.",
+  "I’m a frontend developer with 6 years of experience building responsive, accessible, user-focused applications with React.js, JavaScript, HTML, CSS, and REST APIs.",
+  "I turn Figma designs into reusable components and API-driven interfaces, with thoughtful loading, error, and empty states. I care about usability, performance, semantic HTML, and experiences that work across devices.",
+  "I enjoy working closely with designers, QA, and backend teams in Agile environments—and continuously learning better ways to build for the web.",
 ];
 
 export const aboutCards = [
   {
     icon: "🏗️",
-    title: "UI Systems Specialist",
-    body: "4+ years building B2B platforms on Ewiz Commerce — turning complex catalogue and configuration requirements into clean, reusable UI systems.",
+    title: "Reusable React interfaces",
+    body: "Build component-based interfaces and shared UI patterns that are consistent, maintainable, and ready to grow.",
   },
   {
     icon: "⚡",
-    title: "Performance-focused",
-    body: "Improved UI speed and reduced technical debt to deliver faster, cleaner releases.",
+    title: "Accessible by design",
+    body: "Use semantic HTML, responsive layouts, and accessibility best practices to make interfaces easier to use.",
   },
   {
-    icon: "⚛️",
-    title: "React-first, always learning",
-    body: "Certified in React.js and Next.js. Growing into advanced patterns — custom hooks, context, and performance optimisation at scale.",
+    icon: "🔌",
+    title: "API-driven experiences",
+    body: "Integrate REST APIs and handle loading, validation, error, empty, and data display states with care.",
   },
   {
     icon: "🤝",
-    title: "Cross-functional collaborator",
-    body: "Experienced working with back-end engineers, UI/UX designers, and QA in Agile environments — from ticket to deployment.",
+    title: "Collaborative delivery",
+    body: "Partner with designers, QA, and backend developers through requirements, reviews, testing, and production support.",
   },
 ];
 
 export const experiences = [
   {
-    role: "Front End Developer",
-    company: "Powerweave Software Services",
+    role: "Front-End Developer",
+    company: "Powerweave Software Services Pvt. Ltd.",
     period: "Jun 2024 – Present",
     location: "Remote, UK",
     bullets: [
-      "Developed and maintained B2B websites on the eWiz SaaS platform, implementing frontend features and client-requested site updates.",
-      "Served as a senior development resource, joining client requirement meetings with the Customer Success team and implementing agreed changes on the site.",
-      "Refactored JavaScript and CSS into modular React components; this reduced future development time by about 30%.",
-      "Investigated production defects and performance bottlenecks, working with backend and QA colleagues to deliver fixes through Agile sprints.",
-      "Applied responsive design, cross-browser checks, code splitting, and lazy loading to support usability and application performance.",
+      "Develop and maintain B2B e-commerce websites on the eWiz SaaS platform using React.js, JavaScript, HTML5, CSS3, and REST APIs.",
+      "Gather client requirements with cross-functional teams, then deliver frontend features and iterative improvements from feedback.",
+      "Build reusable UI components and shared patterns for consistency, scalability, and maintainability.",
+      "Implement responsive, mobile-first interfaces, API-driven features, and clear loading, error, and empty states.",
+      "Apply semantic HTML and accessibility practices; troubleshoot production issues with backend and QA teams.",
+      "Improve performance with code splitting, lazy loading, component optimization, and efficient rendering.",
+      "Contribute to Agile ceremonies, peer code reviews, production support, and continuous improvement.",
+      "Refactored JavaScript and CSS into reusable React components and supported client requirement discussions as a senior development resource.",
     ],
   },
   {
     role: "Associate Web Developer",
-    company: "Powerweave Software Services",
+    company: "Powerweave Software Services Pvt. Ltd.",
     period: "Mar 2022 – May 2024",
-    location: "Andheri, India",
+    location: "Remote, India",
     bullets: [
-      "Built responsive e-commerce interfaces using JavaScript, HTML, and Sass, working from new designs and existing applications",
-      "Worked with designers and backend developers in Agile method, maintaining layouts across mobile, tablet, and desktop",
-      "Upskilled in React to build fast, responsive websites",
-      "Translated UI/UX wireframes and Figma designs into reusable React components",
-      "Implemented product filters, cart updates, and form validation using React Hooks and component state",
-      "Integrated REST APIs for product data, handling loading, error, and data-transformation states",
+      "Built responsive e-commerce interfaces using JavaScript, HTML5, CSS3, and Sass.",
+      "Translated Figma designs and wireframes into reusable frontend components.",
+      "Developed product filters, cart functionality, forms, and interactive features with React Hooks.",
+      "Integrated REST APIs for product catalogues, authentication, and order management.",
+      "Implemented loading indicators, validation, error handling, and data display states.",
+      "Collaborated with designers, backend developers, and QA; performed cross-browser testing and UI validation.",
     ],
   },
   {
-    role: "Junior Web Developer",
-    company: "Avencore",
-    period: "Oct 2021 - Feb 2022",
-    location: "Remote",
+    role: "Web Designer",
+    company: "Avencore Tech Consultant",
+    period: "Oct 2021 – Feb 2022",
+    location: "India",
     bullets: [
-      "Developed e-commerce websites on the eWiz SaaS platform, enhancing user experience and functionality.",
-      "Designed and implemented website layouts using HTML, CSS, JavaScript, and jQuery, ensuring responsive design.",
-      "Collaborated with cross-functional teams to deliver projects on time and meet client specifications.",
+      "Designed and developed responsive website layouts using HTML and CSS.",
+      "Applied UI/UX principles to create clear, user-friendly interfaces.",
+      "Worked with stakeholders on design updates and site enhancements.",
     ],
   },
   {
-    role: "Career break",
+    role: "Career Break — Maternity Leave",
     company: "Career break",
-    period: "Oct 2019 – Sep 2021 ",
-    location: "Karnataka, India",
-    bullets: [
-      "Career break to welcome and care for my child.",
-    ],
+    period: "Oct 2019 – Sep 2021",
+    location: "India",
+    bullets: [],
   },
   {
     role: "Associate Software Engineer",
-    company: "OMNION Premedia Pvt. Ltd",
+    company: "OMNION Premedia Pvt. Ltd.",
     period: "Aug 2018 – Sep 2019",
-    location: "India",
+    location: "Bangalore, India",
     bullets: [
-      "Designed user interfaces for orthodontic applications, enhancing user experience and clinical efficiency", 
-       "Contributed to application development  using HTML, CSS, JavaScript, and jQuery",
-       "Collaborated with team members to build and refine features, ensuring alignment with clinical needs"
+      "Designed and developed user interfaces for orthodontic software applications.",
+      "Built frontend features using HTML, CSS, JavaScript, and jQuery.",
+      "Collaborated with developers and business teams to improve usability and workflow efficiency.",
+      "Participated in testing and feature validation.",
     ],
   },
 ];
 
 export const projects = [
   {
-    eyebrow: "B2B · E-commerce",
-    title: "B2B  E-commerce Platform",
-    desc: "Delivered end-to-end frontend for multiple e-commerce platforms, building responsive, reusable UIs for listings, catalog, cart, and checkout using HTML5, SCSS, JavaScript, and React with Tailwind CSS.",
-    tags: ["Ewiz Commerce", "HTML5", "SCSS", "JavaScript", "React.js", "Tailwind CSS", "REST APIs"],
+    eyebrow: "E-commerce · Frontend",
+    title: "B2B E-commerce Experiences",
+    desc: "Develop and maintain responsive e-commerce interfaces on the eWiz SaaS platform, building reusable frontend features for real-world catalogue and shopping workflows.",
+    tags: ["eWiz SaaS", "React.js", "JavaScript", "HTML5", "CSS3", "REST APIs"],
     featured: false,
   },
   {
-    eyebrow: "Search · Algolia",
-    title: "Algolia Product Search",
-    desc: "Integrated Algolia search into a high-traffic B2B platform, enabling real-time search, autocomplete, faceted navigation, and dynamic filtering for faster product discovery. Customized search experiences using Algolia's APIs and improved frontend performance with debounced requests, efficient rendering, and responsive UI patterns across desktop and mobile devices.",
-    tags: [
-      "Algolia",
-      "Instant Search",
-      "Autocomplete",
-      "Faceted Navigation",
-      "Search Ranking",
-      "JavaScript",
-      "HTML5",
-      "SCSS",
-      "Debouncing",
-      "Responsive UI",
-    ],
+    eyebrow: "React · Component systems",
+    title: "Reusable UI Components",
+    desc: "Translate Figma designs and wireframes into modular React components and shared patterns that improve consistency and make interfaces easier to maintain.",
+    tags: ["React.js", "React Hooks", "Reusable Components", "Figma", "JavaScript"],
     featured: false,
   },
   {
-    eyebrow: "Performance · E-commerce",
-    title: "Site Performance Optimisation",
-    desc: "Boosted site speed on live e-commerce platforms with lazy loading, debounced requests, and leaner front-end rendering — faster pages and smoother UX on desktop and mobile.",
-    tags: [
-      "Performance",
-      "Lazy Loading",
-      "Debouncing",
-      "JavaScript",
-      "HTML5",
-      "SCSS",
-      "Responsive UI",
-    ],
+    eyebrow: "Integration · User experience",
+    title: "API-driven Shopping Flows",
+    desc: "Connect product catalogues, authentication, and order-management APIs to clear, responsive interfaces with loading indicators, validation, error handling, and useful data states.",
+    tags: ["REST APIs", "JavaScript", "React Hooks", "Loading & Error States", "Data Transformation"],
     featured: false,
   },
   {
-    eyebrow: "Modernisation · React",
-    title: "Javascript to React Migration",
-    desc: "Migrated  Javascript UI modules to React across key e-commerce flows. Improved maintainability and component reuse while reducing technical debt — delivered in phases to keep production stable.",
-    tags: ["React.js", "JavaScript",  "Refactoring", "Component architecture", "Ewiz Commerce"],
+    eyebrow: "Quality · Accessibility",
+    title: "Responsive, Accessible UI",
+    desc: "Build mobile-first layouts with semantic HTML, accessibility best practices, cross-browser checks, and performance-minded delivery for consistent experiences across devices.",
+    tags: ["WCAG", "Semantic HTML", "Responsive Design", "Code Splitting", "Lazy Loading"],
     featured: false,
   },
   {
-    eyebrow: "UI · Static Pages",
-    title: "Marketing & Landing Pages",
-    desc: "Built high-quality static UI pages with smooth animations, lazy-loaded assets, and pixel-perfect, responsive layouts across desktop and mobile. Focused on fast load times, clean markup, and faithful implementation from design.",
-    tags: ["HTML5", "SCSS", "JavaScript", "CSS Animations", "Lazy Loading", "Responsive Design", "Pixel-perfect"],
+    eyebrow: "Personal project · React",
+    title: "Portfolio Website",
+    desc: "Designed and developed a responsive portfolio with modular sections, accessible navigation, and a clear visual hierarchy to showcase frontend work and skills.",
+    tags: ["React.js", "Tailwind CSS", "Responsive Design", "Accessibility"],
     featured: false,
   },
 ];
 
 export const skillGroups = [
-  { category: "Framework", skills: ["React.js", "Next.js", "jQuery"] },
-  { category: "Language", skills: ["JavaScript (ES6+)", "HTML5"] },
-  { category: "Styling", skills: ["CSS3", "SASS / SCSS", "Tailwind CSS", "Bootstrap"] },
-  { category: "Platform", skills: ["Ewiz Commerce", "REST APIs"] },
-  { category: "Tooling", skills: ["Git", "GitHub", "VS Code"] },
+  { category: "Frontend", skills: ["React.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "jQuery"] },
+  { category: "React development", skills: ["React Hooks", "Context API", "Functional Components", "Component Architecture", "State Management"] },
+  { category: "Styling & responsive UI", skills: ["Tailwind CSS", "Sass / SCSS", "Bootstrap", "Mobile-First", "Cross-Browser Compatibility"] },
+  { category: "UI & accessibility", skills: ["WCAG", "Semantic HTML", "UI/UX Best Practices", "Figma Handoff", "User-Centred Design"] },
+  { category: "APIs & performance", skills: ["REST APIs", "Loading / Error / Empty States", "Data Transformation", "Code Splitting", "Lazy Loading", "Performance Optimization", "Debugging"] },
+  { category: "Testing & delivery", skills: ["Browser / UI / Accessibility Testing", "Code Reviews", "Git", "GitHub", "Agile / Scrum", "VS Code", "npm", "Production Support"] },
+];
+
+export const education = [
   {
-    category: "Practices",
-    skills: [
-      "UI Architecture",
-      "Responsive Design",
-      "Cross-Browser",
-      "Mobile-First",
-      "Performance",
-      "SEO",
-      "Agile",
-    ],
+    degree: "M.Tech — Microelectronics and Control Systems",
+    institution: "Visvesvaraya Technological University, India",
+  },
+  {
+    degree: "B.Tech — Electronics and Communication Engineering",
+    institution: "Visvesvaraya Technological University, India",
   },
 ];
